@@ -4,7 +4,7 @@ local function GetURL(scripturl)
 	if shared.VapeDeveloper then
 		return readfile("vape/"..scripturl)
 	else
-		local res = game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..scripturl, true)
+		local res = game:HttpGet("https://raw.githubusercontent.com/BlurpleClub/vape4EVER/main/VAPE4EVER/"..scripturl, true)
 		assert(res ~= "404: Not Found", "File not found")
 		return res
 	end
